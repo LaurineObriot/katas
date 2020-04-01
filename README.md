@@ -9,10 +9,37 @@ decoder("... --- ...") = "sos" decoder("-... --- -. .--- --- ..- .-.") = "bonjou
 
 Voici l'alphabet morse :
 
-a .- h .... o --- u ..- 1 .---- 6 -.... b -... i .. p .--. v ...- 2 ..--- 7 --... c -.-. j .--- q --.- w .-- 3 ...-- 8 ---.. d -.. k -.- r .-. x -..- 4 ....- 9 ----. e . l .-.. s ... y -.-- 5 ..... 0 ----- f ..-. m -- t - z --.. g --. n -.
+A : .-
+B : -...
+C : -.-.
+D : -..
+E : .
+F : ..-.
+G : --.
+H : ....
+I : ..
+J : .---
+K : -.-
+L : .-..
+M : --
+N : -.
+O : ---
+P : .--.
+Q : --.-
+R : .-.
+S : ...
+T : -
+U : ..-
+V : ...-
+W : .--
+X : -..-
+Y : -.--
+Z : --..
+
+1 .---- 2 ..--- 3 ...-- 4 ....- 5 ..... 6 -.... 7 --...8 ---.. 9 ----. 0 -----.
 
 ### Contraintes
-Mémoire RAM disponible : 256Mo
-Durée maximum d’exécution : 6 secondes
-Le programme doit lire les entrées depuis l’entrée standard
-Le programme doit écrire la réponse dans la sortie standard
+- Mémoire RAM disponible : 256Mo
+- Durée maximum d’exécution : 6 secondes
+- Le programme doit lire les entrées depuis l’entrée standard
+- Le programme doit écrire la réponse dans la sortie standard

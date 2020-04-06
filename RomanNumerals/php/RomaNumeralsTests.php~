@@ -1,0 +1,15 @@
+<?php
+
+
+require_once 'Diamond.php';
+require_once 'PHPUnit/Autoload.php';
+
+class DiamondTests extends PHPUnit_Framework_TestCase {
+
+	function testEmpty() {
+		$this->assertEquals("", "");
+	}
+
+}
+
+?>

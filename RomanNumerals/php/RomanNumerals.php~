@@ -1,0 +1,13 @@
+<?php
+
+
+class Diamond {
+
+	public function someFunction() {
+		
+		return "";
+		
+	}
+}
+
+?>

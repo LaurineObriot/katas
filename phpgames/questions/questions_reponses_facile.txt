@@ -1,0 +1,5 @@
+Comment s'appelle le chien de Tintin ?|milou
+Quel est l'acronyme de Societe Nationale des Chemin de Fer ?|sncf
+Qui est le meilleur ami de Harry Potter ?|ron
+Comment s'appelle le Hobbit qui doit detruire l'anneau malefique ?|frodon
+De quel couleur est le cheval blanc d'Henry 4 ?|blanc

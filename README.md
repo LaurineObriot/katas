@@ -8,11 +8,14 @@ Les solutions sont dans les fichiers Solution.java présent dans les différents
 #### Kata potter :
 http://codingdojo.org/kata/Potter/
 
-#### Fizzbuzz : 
+#### Fizzbuzz :
 http://codingdojo.org/kata/FizzBuzz/
 
-#### MasterMind : 
+#### MasterMind :
 http://codingdojo.org/kata/Mastermind/
 
-#### RomanNumerals : 
+#### RomanNumerals :
 http://codingdojo.org/kata/RomanNumerals/
+
+#### phpgames
+Contient Calculatrice, Nombre à deviner, mastermind & questions culture générale.

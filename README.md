@@ -19,3 +19,6 @@ http://codingdojo.org/kata/RomanNumerals/
 
 #### phpgames
 Contient Calculatrice, Nombre à deviner, mastermind & questions culture générale.
+
+###StringCalculator
+http://codingdojo.org/kata/StringCalculator/

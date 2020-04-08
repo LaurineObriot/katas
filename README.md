@@ -20,14 +20,14 @@ http://codingdojo.org/kata/RomanNumerals/
 #### phpgames
 Contient Calculatrice, Nombre à deviner, mastermind & questions culture générale.
 
-###StringCalculator
+### StringCalculator
 http://codingdojo.org/kata/StringCalculator/
 
 ### Diamond
 http://codingdojo.org/kata/Diamond/
 
 ### Salle de sport
-Énoncé
+##### Énoncé
 Je peux créer de nouvelles formules, au mois ou à l’année, avec les règles suivantes:
 
 un prix de base est fixé
@@ -44,10 +44,10 @@ Un abonnement se renouvelle automatiquement
 
 Au bout de 3 ans d’abonnement, l’abonné reçoit un email de remerciement
 
-EventStorming
-<img src="">
+##### EventStorming
+<img src="https://github.com/LaurineObriot/katas/blob/master/ressources/oui.jpg">
 
-Implémentation
+##### Implémentation
 Utilisez le langage que vous voulez
 
 Mais pas de framework

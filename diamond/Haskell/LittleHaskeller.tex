@@ -1,0 +1,39 @@
+\newcommand{\troislambdas}{\begin{center}
+    $\lambda\hspace{.25cm}\lambda\hspace{.25cm}\lambda$ \\
+\color{black}\end{center}}
+\definecolor{lightgray}{rgb}{.95,.95,.95}
+\definecolor{darkgreen}{rgb}{0, .50, 0}
+\definecolor{verylightgreen}{cmyk}{.010,0,.010,0}
+\definecolor{verylightyellow}{cmyk}{0,0,.05,0}
+\definecolor{orange}{rgb}{.91,.54,.17}
+\definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}
+\definecolor{pinegreen}{rgb}{0.0, 0.47, 0.44}
+
+\newcommand{\success}{\textcolor{darkgreen}{$\blacksquare$} }
+\newcommand{\failure}{\textcolor{red}{$\blacksquare$} }
+\newcommand{\error}{\textcolor{orange}{$\blacksquare$} }
+\newcommand{\hearts}[1]{\textcolor{red}{{#1}$\varheartsuit$}}
+\newcommand{\clubs}[1]{\textcolor{black}{{#1}$\clubsuit$}}
+\newcommand{\diamonds}[1]{\textcolor{red}{{#1}$\vardiamondsuit$}}
+\newcommand{\spades}[1]{\textcolor{black}{{#1}$\spadesuit$}}
+\newcommand{\monohearts}{$\varheartsuit$}
+\newcommand{\monoclubs}{$\clubsuit$}
+\newcommand{\monodiamonds}{$\vardiamondsuit$}
+\newcommand{\monospades}{$\spadesuit$}
+
+%% little haskeller commands
+\newcounter{lhparagraph}
+\newcommand{\il}{\lstinline}
+\newcommand{\lhQ}{\stepcounter{lhparagraph}\begin{multicols}{2}}
+\newcommand{\lhA}{\hspace*{\fill}\vspace*{\fill}\columnbreak\newline{\tiny\arabic{lhparagraph}} }
+\newcommand{\lhend}{\end{multicols}}
+\newcommand{\lhN}{\lhend\hrule\lhQ}
+% clearer command names
+\newcommand{\ask}{\lhN}
+\newcommand{\answer}{\lhA}
+\newcommand{\askfirst}{\lhQ}
+\newcommand{\stopasking}{\lhend}
+\newcommand{\halt}{\stopasking\end{document}}
+\newenvironment{qr}[1]{%
+\begin{multicols}{2}{#1}\columnbreak\\}
+{\end{multicols}\hrule}

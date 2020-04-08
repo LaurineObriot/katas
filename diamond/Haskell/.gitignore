@@ -1,0 +1,6 @@
+bin
+*.hi
+*.o
+*.ou
+*.lo
+*.aux

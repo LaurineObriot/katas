@@ -1,0 +1,71 @@
+%% little programmer commands
+\input{binhex}
+\newcommand{\sourcepage}{
+\newpage
+\newpagecolor{verylightblue}\afterpage{\restorepagecolor}}
+\newcommand{\newsection}[1]{
+\newpage
+\restorepagecolor
+\section{#1}
+\vspace{10cm}
+\hrule}
+\newcounter{lpCount}
+\setcounter{lpCount}{-1}
+\newcommand{\sq}[1]{
+\begin{tikzpicture}[scale=0.33, color=NavyBlue]
+\draw (0,0) rectangle (1,1);
+\draw (0.5,0.5) node {#1};
+\end{tikzpicture}
+}
+\newcommand{\troislambdas}{\begin{center}
+    $\lambda\hspace{.25cm}\lambda\hspace{.25cm}\lambda$ \\
+\color{black}\end{center}}
+\definecolor{lightgray}{rgb}{.95,.95,.95}
+\definecolor{darkgreen}{rgb}{0, .50, 0}
+\definecolor{verylightgreen}{cmyk}{.010,0,.010,0}
+\definecolor{verylightyellow}{cmyk}{0,0,.05,0}
+\definecolor{orange}{rgb}{.91,.54,.17}
+\definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}
+\definecolor{pinegreen}{rgb}{0.0, 0.47, 0.44}
+\newcommand{\il}{\lstinline}
+\newcommand{\lpQuestion}{\stepcounter{lpCount}\begin{multicols}{2}{\sq{\tiny\nhex{2}{\arabic{lpCount}}}}}
+\newcommand{\lpQuestionN}{\begin{multicols}{2}}
+\newcommand{\lpMonoQuestion}{\stepcounter{lpCount}\sq{\tiny\nhex{2}{\arabic{lpCount}}}}
+\newcommand{\lpAnswer}{\hspace*{\fill}\vspace*{\fill}\columnbreak\\}
+\newcommand{\lpAnswernowords}{\hspace*{\fill}\vspace*{\fill}\columnbreak\\\vspace*{-2em}}
+\newcommand{\lpEnd}{\end{multicols}}
+\newcommand{\lpNext}{\lpEnd\hrule\lpQuestion}
+\newcommand{\lpNextN}{\lpEnd\hrule\lpQuestionN}
+\newcommand{\askfirst}{\lpQuestion}
+\newcommand{\ask}{\lpNext}
+\newcommand{\answer}{\lpAnswer}
+\newcommand{\answernowords}{\lpAnswernowords}
+\newcommand{\askfirstN}{\lpQuestionN}
+\newcommand{\askN}{\lpNextN}
+\newcommand{\stopasking}{\lpEnd}
+
+\DefineVerbatimEnvironment%
+    {term}{Verbatim}
+    {fontsize=\footnotesize, commandchars=\\\{\},
+     fontfamily=courier, fontseries=b, frame=none, framerule=0.2mm,
+    framesep=2mm, rulecolor=\color{MidnightBlue},
+    formatcom=\color{MidnightBlue}
+    }
+
+\newcommand{\trm}[1]{\texttt{\footnotesize{\color{MidnightBlue}{#1}}}}
+\newcommand{\key}[1]{\tc{orange}{#1}}
+\newcommand{\returnkey}{\enskip{\key{$\hookleftarrow$}}}
+\newcommand{\ltk}{\key{$\leftarrow$}}
+\newcommand{\rtk}{\key{$\rightarrow$}}
+\newcommand{\upk}{\key{$\uparrow$}}
+\newcommand{\dnk}{\key{$\downarrow$}}
+\newcommand{\tc}{\textcolor}
+\newcommand{\wtf}{$\diamond$}
+\newcommand{\etc}{$\hookleftarrow$}
+\newcommand{\vd}{$\vdots$}
+
+\renewcommand{\labelitemi}{$\rightarrow$}
+\newsavebox{\lessonbox}
+\newenvironment{lesson}
+{\begin{lrbox}{\lessonbox}\begin{minipage}{0.9\linewidth}\medskip}
+{\medskip\end{minipage}\end{lrbox}\framebox[1.1\width]{\usebox{\lessonbox}}}

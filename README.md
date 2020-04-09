@@ -2,31 +2,31 @@
 
 Dépot pour garder une trace de tout mes katas & des solutions aux défis codinGame.
 
-#### Codingame :
+## Codingame :
 Les solutions sont dans les fichiers Solution.java présent dans les différents réperoires. Ils sont à exécuter dans l'IDE en ligne de http://codingame.com car seul le code est important, les classes n'étant pas toutes nommées Solution.
 
-#### Kata potter :
+## Kata potter :
 http://codingdojo.org/kata/Potter/
 
-#### Fizzbuzz :
+## Fizzbuzz :
 http://codingdojo.org/kata/FizzBuzz/
 
-#### MasterMind :
+## MasterMind :
 http://codingdojo.org/kata/Mastermind/
 
-#### RomanNumerals :
+## RomanNumerals :
 http://codingdojo.org/kata/RomanNumerals/
 
-#### phpgames
+## phpgames
 Contient Calculatrice, Nombre à deviner, mastermind & questions culture générale.
 
-### StringCalculator
+## StringCalculator
 http://codingdojo.org/kata/StringCalculator/
 
-### Diamond
+## Diamond
 http://codingdojo.org/kata/Diamond/
 
-### Salle de sport
+## Salle de sport
 ##### Énoncé
 Je peux créer de nouvelles formules, au mois ou à l’année, avec les règles suivantes:
 
@@ -65,3 +65,58 @@ Le métier ne parle que français, donc le code métier doit être en français
 Organiser le code en fonction des Bounded Contexts
 
 On ne veut pas voir d’AbonnementService !
+
+
+## Puissance 4
+L'implémentation proposée consiste en :
+
+Une grille
+Un analyseur
+Un arbitre
+Une application
+Une vue
+Les responsabilités de ces différents éléments sont :
+
+#### Grille
+Une grille de Puissance 4 :
+
+donne l’état de ses 42 cellules (7 colonnes de 6 rangées)
+accepte jusqu’à 6 jetons dans une colonne
+se vide
+se représente sous forme de texte
+#### Analyseur
+Un Analyseur de Puissance 4 :
+
+collabore avec une grille
+sait si un joueur a gagné :
+ligne de 4 jetons de même couleur
+horizontale, verticale, diagonale vers le haut,
+diagonale vers le bas
+sait si la partie est nulle (grille est remplie, aucune ligne gagnante)
+##### Arbitre
+Un Arbitre de Puissance 4 :
+
+dit à qui le tour de jouer (jaune ou rouge)
+Jaune commence la partie
+entre le coup du joueur courant
+sait si la partie est en cours, gagnée (et par quel joueur) ou nulle
+#### Application
+Une Application Puissance 4 :
+
+produit les affichages sur la console :
+la grille
+a qui le tour ("JAUNE" ou "ROUGE")
+accepte à la console le numéro de colonne à jouer
+s’arrête lorsque la partie est gagnée ou nulle
+affiche le résultat de la partie (gagnant ou nulle)
+#### Vue
+Une Vue Puissance 4 :
+
+envoie des messages (String) à la console
+reçoit des commandes (String) de la console
+Supprimer le couplage entre la classe Application et la Console système
+
+La classe Application :
+
+assure la boucle de jeu
+collabore avec un Arbitre, une Grille, une Vue

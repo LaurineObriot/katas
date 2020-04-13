@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path("../../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "banking"
+
+bank_a = Banking::Bank.new("bank-a")
+bank_b = Banking::Bank.new("bank-b") 
+jim = Banking::Account.new(bank_a, "JIM", 50000)
+emma = Banking::Account.new(bank_b, "EMMA", 70000)
+agent = Banking::Agent.new(jim, emma, 20000)
+agent.call

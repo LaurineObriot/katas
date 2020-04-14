@@ -1,0 +1,14 @@
+
+\.gradle/
+
+\.idea/
+
+build/
+
+caches/
+
+daemon/
+
+native/
+
+notifications/

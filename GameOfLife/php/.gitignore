@@ -1,0 +1,6 @@
+.DS_Store
+vendor
+.idea
+composer.lock
+composer.phar
+infection.log

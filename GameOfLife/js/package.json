@@ -1,0 +1,14 @@
+{
+  "watch": {
+    "test": "*.js"
+  },
+  "scripts": {
+    "test": "jasmine",
+    "watch": "npm-watch"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "lodash": "^4.17.4",
+    "npm-watch": "^0.1.8"
+  }
+}

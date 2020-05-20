@@ -2,7 +2,7 @@ input = new Scanner(System.in);
 
 /**
  * CodinGame planet is being attacked by slimy insectoid aliens.
- **/
+**/
 
 
 // game loop

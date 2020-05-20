@@ -5,7 +5,7 @@ import "fmt"
 
 /**
  * CodinGame planet is being attacked by slimy insectoid aliens.
- **/
+**/
 
 func main() {
     for {

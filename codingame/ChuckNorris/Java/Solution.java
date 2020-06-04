@@ -1,3 +1,5 @@
+// This puzzle takes difficulty (or at least complexity) up a notch in languages without automatic memory management. The aim is to convert a string into unary code (blocks of zeros). First each character must be converted into its binary ascii code, then in unary.
+
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -14,7 +16,7 @@ class Solution {
         char[] cArray = MESSAGE.toCharArray();
         StringBuilder answer = new StringBuilder();
         StringBuilder binaryString = new StringBuilder();
-        
+
         for (char stringChar : cArray) {
             binaryString.append((String) String.format("%7s", Integer.toBinaryString((int) stringChar)).replace(' ', '0'));
         }
@@ -29,13 +31,13 @@ class Solution {
             answer.append("0 ");
           }
           for (int i = 0; i < group.length(); i++) {
-                answer.append("0");  
+                answer.append("0");
           }
           if (counter < groups.length - 1) {
             answer.append(" ");
             counter++;
-          } 
-          
+          }
+
         }
 
         System.out.println(answer.toString());

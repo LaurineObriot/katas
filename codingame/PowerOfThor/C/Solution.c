@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// For this puzzle, we want Thor to reach his light of power. All we have to do is compare Thor's coordinates with the position of its light of power and output the good direction.
+
 int main(int argc, char** argv)
 {
     // Coordinates of the light and Thor

@@ -1,3 +1,5 @@
+# This puzzle is a simplified version of the hard puzzle "Skynet : the bridge". The aim is to drive a motorbike to make it jump over a gap at the right speed and time. Validation tests are specific cases, that can be passed by implementing the algorithm given in the problem statement. Accelerate until you have enough speed to cross the gap, keep that speed until its time to jump and brake after the gap.
+
 before, gap, after = int(input()), int(input()), int(input())
 
 while 1:

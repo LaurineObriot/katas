@@ -1,3 +1,5 @@
+// In this puzzle, the aim is to destroy the moutains below your ship, which is moving space invader style, before colliding with them. The idea is to perform a linear search and shoot the highest moutain each time an ammo is available.
+
 import java.util.*;
 import java.math.*;
 

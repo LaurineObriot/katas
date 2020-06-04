@@ -1,3 +1,5 @@
+# For this puzzle, we want Thor to reach his light of power. All we have to do is compare Thor's coordinates with the position of its light of power and output the good direction.
+
 # lX, lY: coordinates of the light of power
 # tX, tY: Thor's coordinates
 lX, lY, tX, tY = [int(i) for i in input().split()]

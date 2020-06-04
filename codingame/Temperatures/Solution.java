@@ -1,3 +1,5 @@
+// The aim of this puzzle is to find the closest temperature to 0 in a list. It is pretty easy, and perfect to introduce a very commun and fundamental algorithm : the linear search.
+
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -19,8 +21,8 @@ class Solution {
         int result = 0;
         if (TEMPS.isEmpty()) {
             System.out.println(result);
-        } 
-        else { 
+        }
+        else {
             List<Integer> list = new ArrayList<Integer>();
             List<Integer> originaList = new ArrayList<Integer>();
             for (int i = 0; i < N; i++) {
@@ -29,7 +31,7 @@ class Solution {
             }
             if (originaList.size() == 1) {
                 result = originaList.get(0);
-            } 
+            }
             else {
                 Collections.sort(list);
                 result =  list.get(N-1);
@@ -43,7 +45,7 @@ class Solution {
                 if (Math.signum(result) == -1.0 && originaList.contains(Math.abs(result))) {
                     result = Math.abs(result);
                     System.err.println(result);
-                } 
+                }
             }
             System.out.println(result);
         }

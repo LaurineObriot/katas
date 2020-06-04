@@ -1,5 +1,7 @@
 import java.util.*;
 
+// For this puzzle, we want Thor to reach his light of power. All we have to do is compare Thor's coordinates with the position of its light of power and output the good direction.
+
 class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);

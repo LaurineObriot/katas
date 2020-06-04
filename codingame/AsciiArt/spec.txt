@@ -1,1 +1,3 @@
 https://www.codingame.com/ide/16299233f0371f370024432977b8633af309e93
+
+The aim of this puzzle is to copy and paste part of strings given in input, to convert a simple string into a nice ASCII-art representation. Once you have a few auxiliary functions to select the right parts of the strings, it is quite easy.
